@@ -1,21 +1,24 @@
 # MongoDB Configuration
-mongo_connection_str: "mongodb://localhost:27017"
-database_name: "Quran_granite"
-collection_name: "documents"
+# mongo_connection_str: "mongodb://localhost:27017"
+# database_name: "Quran_granite"
+# collection_name: "documents"
 
 # File System Configuration
 files_directory: "resources"
 chunk_size: 1500
+json_file_path: "/content/embedded/QuranYarab1.documents.json"
+
 
 # Ollama Configuration
 model_name: "gemma3:12b"
-ollama_base_url: "http://localhost:11434"
+# ollama_base_url: "http://localhost:11434"
 temperature: 0.05
 
 # Embedding Model Configuration
 # BAAI/bge-large-en-v1.5
 # 
-embedding_model: "./models/Granite-Embedding-278M"
+# embedding_model: "./models/Granite-Embedding-278M"
+embedding_model: "Bofandra/fine-tuning-use-cmlm-multilingual-quran-translation-qa"
 # embedding_model: "./models/qwen3-4b"
 
 # Retrieval Configuration
